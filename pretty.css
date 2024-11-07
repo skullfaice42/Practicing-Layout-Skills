@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+ol{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: grey;
+    /* text-decoration: none; */
+    list-style-type: none;
+    
+}
+ol li{
+    width: fit-content;
+    /* justify-content: space-between 200px; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    outline: 2px solid white;
+    
+}
+.brimg1{
+    background-image: url(assets/img1.png);
+    background-size: cover;        /* Makes the image cover the entire element */
+    background-position: center;   /* Centers the image */
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
+  
+}
