@@ -4,7 +4,11 @@
     margin: 0%;
     font-family: "Open Sans", sans-serif;
 }
+button{
+    /* outline: none; */
+}
 body{
+    /* height: 200px; */
     /* background-color: rgb(56, 62, 76); */
     /* above will make the screen all 1 color */
 }
@@ -169,14 +173,123 @@ header p:hover{
     background-color: white;
     /* color of page */
     /* background-color: black; */
-    margin-left: 70%;
+    margin-left: 50%;
+    margin-bottom: 6%;
 }
 
-.two-cards{
-    margin-bottom: 1000px;
+body{
+    height: 20000px;
     /* only so i can scroll down cause i dont like being at the very bottom :| */
 }
 .mid-two-card p:nth-of-type(2){
-    margin-bottom: 40%;
+    /* margin-bottom: 40%; */
     /* bruh why th are these linked together */
+}
+
+/* mountian img n stuff here */
+.mountians-img{
+    background-image: url('assets/img13.jpg');
+    background-size: 120%;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    height: 40vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+}
+.mtext{
+    width: 50%;
+}
+.mtext p{
+    margin-top: 2%;
+    margin-bottom: 6%;
+    font-size: .8em;
+}
+.mtext h3{
+    font-size: 1.5em;
+}
+
+/* the 4ths go here lol */
+.four-boxes{
+    display: flex;
+    max-width: 70%;
+    justify-self: space-between;
+    margin: 0 auto;
+    gap: 2%;
+    margin-top: 4%;
+
+}
+.four-boxes .one-fourth{
+    background-color: rgb(242, 242, 242)
+}
+.four-boxes img{
+    width: 100%;
+}
+.four-boxes h3{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: .8em;
+    text-align: center;
+}
+.four-boxes p:first-of-type{
+    font-size: .6em;
+    margin-left: 10%;
+    margin-left: 10%;
+}
+/* .four-boxes p:nth-of-type(2){ */
+    /* padding: .2em .8em; */
+    /* border-radius: 5px; */
+    /* align-content: center; */
+    /* color: black; */
+    /* outline: black; */
+    /* text-decoration: none; */
+    /* justify-self: center; */
+    /* align-self: center; */
+/* } */
+.one-fourth button{
+    display: block;
+    padding: .2em 1em;
+    font-size: 70%;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* justify-items: center; */
+    justify-self: center;
+    /* justify-tracks: center; */
+    /* margin-left: 50%; */
+    /* margin-right: 50%; */
+}
+.one-big-column{
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 1.5%;
+    /* width: 70%; */
+    /* background-color: black; */
+}
+.one-big-column h3{
+    margin-top: 4%;
+    margin-bottom: 1%;
+}
+.one-big-column p{
+    font-size: .8em;
+    
+}
+.one-big-column button{
+    /* display: inline-block; */
+    width: 15%;
+    justify-content: center;
+    /* margin: 0 auto; */ /*bruh we dont even need this*/
+    margin-left: 4%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
