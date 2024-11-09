@@ -1,40 +1,92 @@
-.contact-form{
-    background-image: url('assets/img14.jpg');
-    /* background-size: 120%; */
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+.custom-form-container {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin: auto;
+    background-image: url('assets/img14.jpg'); /* Update this path as needed */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 30vh; 
-    /* width: 20px; */
-    margin-top: 4%;
-    /* fix make sure they all have consistant top margin */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    /* margin: 0 auto; */
-    /* margin-left: 50%; */
 }
-.contact-info p{
-    width: 40%;
-    font-size: .7em;
-    background-color: rgba(255, 255, 255, 0.295);
+
+.custom-description {
+    width: 40%; /* Set total width to 40% */
+    margin: 0 auto 20px auto;
+    background-color: rgba(255, 255, 255, 0.425);
+    border-radius: 8px;
+    padding: 2em;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.custom-contact-form {
+    /* color: black; */
+    /* color: rgba(255, 255, 255, 0.123); */
+    display: flex;
     justify-self: center;
-    padding: 2rem 3rem ;
-    /* background-color: black; */
+    /* justify-content: space-between; */
+    justify-content: center;
+    gap: 10%;
+    width: 43%; /* Inherit width from .custom-description */
+    margin-right: 1.5%;
+    
 }
-.contact-form h3{
-    /* font-size: 1.7em; */
-    /* margin-top: ; */
-    color: white;
-    padding: .5rem 2rem;
-    /* width: 20%; */
-    background-color: black;
+
+.custom-left-section,
+.custom-right-section {
+    width: 48%; /* Ensures both sections fit within .custom-description */
 }
-.group1{
+.custom-left-section {
+    margin-left: 0; /* Remove the left margin that might be adding unwanted spacing */
+}
+input::placeholder, textarea::placeholder {
+    color: black;
+}
+
+.custom-left-section input,
+.custom-right-section textarea {
+    background: rgba(255, 255, 255, 0.404);
+    width: 100%; /* Fills available width within each section */
+    padding: 10px;
+    margin-bottom: 10px;
+    /* color: black; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.custom-right-section {
     display: flex;
-}
-.lil-info{
     flex-direction: column;
+}
+
+.custom-right-section textarea {
+    height: 100%;
+    min-height: 135px;
+    resize: none;
+}
+.custom-form-container h2{
+    /* padding: 2em; */
+    margin-top: 2%;
+    margin-bottom: 1%;
+    color: white;
+}
+.custom-right-section button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-right-section button:hover {
+    background-color: #555;
 }

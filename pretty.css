@@ -8,6 +8,7 @@ button{
     /* outline: none; */
 }
 body{
+    overflow-x: hidden;
     /* height: 200px; */
     /* background-color: rgb(56, 62, 76); */
     /* above will make the screen all 1 color */
@@ -86,7 +87,7 @@ header p:hover{
 
 #top-cards h3 {
     /* color: #2c7cbd; */
-    margin: 15px 0 10px;
+    margin: .5em 0 1em;
     font-size: 1.2em;
 }
 
@@ -94,18 +95,18 @@ header p:hover{
 #top-cards p {
     flex-grow: 1;
     font-size: 0.95em;
-    margin: 10px 0;
+    margin: 1em 0;
     color: black;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 #top-cards button {
-    padding: 10px 20px;
+    padding: .5em 1.5em;
     border: none;
     color: white;
     cursor: pointer;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     font-size: 1em;
 }
 
@@ -266,6 +267,7 @@ body{
     /* margin-right: 50%; */
 }
 .one-big-column{
+    /* margin-bottom: 10px; */
     background-color: rgb(242, 242, 242);
     display: flex;
     flex-direction: column;
@@ -299,64 +301,146 @@ body{
     margin-bottom: 2%;
 }
 /* below is contact form */
-.lower{
-    background-image: url(assets/img14.jpg);
+/* part that sucks here */
+.custom-form-container {
+    margin-top: 1em;
+    /* padding: 20px; */
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin: auto;
+    background-image: url('assets/img14.jpg'); /* Update this path as needed */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40vh;
-    /* flex-direction: column; */
+    height: 80vh;
+}
+
+.custom-description {
+    width: 40%; /* Set total width to 40% */
+    margin: 0 auto 1em auto; /*idk what the hell this does*/
+    /* justify-content: center; */
+    /* margin: 0 auto; */
+    background-color: rgba(255, 255, 255, 0.425);
+    border-radius: 8px;
+    padding: 2em;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.custom-contact-form {
+    /* color: black; */
+    /* color: rgba(255, 255, 255, 0.123); */
+    display: flex;
+    justify-self: center;
+    /* justify-content: space-between; */
     justify-content: center;
+    gap: 10%;
+    width: 43%; /* Inherit width from .custom-description */
+    margin-right: 7.9%;
+    
+}
+
+.custom-left-section,
+.custom-right-section {
+    width: 37.2%; /* Ensures both sections fit within .custom-description */
+}
+.custom-left-section {
+    margin-left: 0; /* Remove the left margin that might be adding unwanted spacing */
+}
+input::placeholder, textarea::placeholder {
+    color: black;
+}
+
+.custom-left-section input,
+.custom-right-section textarea {
+    background: rgba(255, 255, 255, 0.404);
+    width: 100%; /* Fills available width within each section */
+    padding: 1em;
+    margin-bottom: 1em;
+    /* color: black; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.custom-right-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-right-section textarea {
+    height: 100%;
+    min-height: 2em;
+    resize: none;
+}
+
+.custom-form-container h2{
+    /* padding: 2em; */
+    padding: 2em;
+    margin-top: 4%;
+    margin-bottom: 1%;
+    color: white;
+}
+.custom-right-section button {
+    align-self: flex-start;
+    padding: .5em 2em;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-right-section button:hover {
+    background-color: #555;
+}
+/* part that sucks here */
+footer {
+    position: relative; /* Allow absolute positioning inside the footer */
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-}
-.lower h3{
-    color: white;
-    font-size: 1.7em;
-    /* margin-top: 20px; */
-    padding-top: 2em;
-    padding-bottom: 1em;
-}
-.lower .bg{
-    width: 60%;
-    justify-self: center;
-    background-color: hsla(0, 0%, 100%, 0.356);
-}
-.but-hub{
-    display: flex;
-    gap: .6em;
-    flex-direction: column;
-    width: 200px;
-    text-align: start;
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
-    /* bruh work */
-}
-.both{
-    justify-content: center;
-    gap: 2%;
+    padding: 2em;
+    /* background-color: #f5f5f5; */
+    /* box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); */
     margin-top: 2%;
-    display: flex;
-    flex-direction: row;
+    width: 100%;
 }
-.butz button:first-of-type{
-    width: 200px;
-    height: 100px;
-}
-.butz{
-    display: flex;
-    flex-direction: column;
-}
-.butz:nth-child(2){
-    /* justify-content: flex-start; */
-    border-radius: 8px;
 
-    align-items: flex-start;
-    background-color: black;
-    color: white;
-    /* display:block; */
-    display: inline-block;
-    /* margin-top: ; */
-    /* lmao i spend 2 hours trying to get this damn thing to work :sob: */
+footer .text {
+    /* margin-bottom: 20px; */
 }
+
+footer .footer-image {
+    /* position: absolute; Position the image relative to the footer */
+    justify-self: flex-start;
+    /* max-width: 50px; Adjust size as needed */
+    margin-left: 89%;
+    /* height: auto; */
+}
+.text h2{
+    font-size: 2em;
+}
+.text h3{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    font-size: 1em;
+}
+
+.text h4{
+    margin-top: 2%;
+    font-size: .8em;
+    margin-bottom: 3%;
+}
+hr {
+    /* margin: 10px 0; */
+    border: 1px solid #ddd;
+    width: 100vw; /* Full viewport width */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
