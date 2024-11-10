@@ -179,7 +179,7 @@ header p:hover{
 }
 
 body{
-    height: 9000px;
+    /* height: 9000px; */
     /* only so i can scroll down cause i dont like being at the very bottom :| */
 }
 .mid-two-card p:nth-of-type(2){
@@ -201,6 +201,10 @@ body{
     text-align: center;
     color: white;
     margin-top: 5%;
+    /* margin: 0 auto; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 .mtext{
     width: 50%;
@@ -349,6 +353,7 @@ body{
 }
 input::placeholder, textarea::placeholder {
     color: black;
+    /* margin-left: 1%; */
 }
 
 .custom-left-section input,
@@ -444,3 +449,18 @@ hr {
 }
 
 
+@media screen and (max-width: 1440px){
+    .custom-form-container{
+        height: 40vh;
+ 
+}
+    
+}
+@media screen and (max-width: 770px) {
+    .three-cards{
+        width: 100%;
+        /* height: 10%; */
+        overflow: hidden;
+        font: .2em;
+    }
+}
