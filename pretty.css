@@ -8,7 +8,7 @@ button{
     /* outline: none; */
 }
 body{
-    background-color: rgba(19, 18, 18, 0.938);
+    /* background-color: rgba(19, 18, 18, 0.938); */
     overflow-x: hidden;
     /* height: 200px; */
     /* background-color: rgb(56, 62, 76); */
@@ -49,6 +49,14 @@ header p:hover{
     justify-content: center;
     text-align: center;
     color: white;
+
+}
+
+.hero-image, .mountians-img {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .top h2{
     font-size: 3rem;
@@ -311,7 +319,6 @@ body{
 /* part that sucks here */
 .custom-form-container {
     margin-top: 1em;
-    /* padding: 20px; */
     background: rgba(255, 255, 255, 0.8);
     text-align: center;
     margin: auto;
@@ -319,8 +326,10 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed; /* Parallax effect */
     height: 80vh;
 }
+
 
 .custom-description {
     width: 40%; /* Set total width to 40% */
