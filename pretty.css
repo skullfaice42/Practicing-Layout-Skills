@@ -8,6 +8,7 @@ button{
     /* outline: none; */
 }
 body{
+    background-color: rgba(19, 18, 18, 0.938);
     overflow-x: hidden;
     /* height: 200px; */
     /* background-color: rgb(56, 62, 76); */
@@ -65,10 +66,12 @@ header p:hover{
     gap: 3%;
     /* padding: 20px; */
     max-width: 90%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
 }
 
-#top-cards {
+.top-cards {
     background-color: rgb(242, 242, 242);
     /* padding: 20px; */
     text-align: left;
@@ -80,19 +83,19 @@ header p:hover{
     margin-top: 5%;
 }
 
-#top-cards img {
+.top-cards img {
     width: 100%;
     height: auto;
 }
 
-#top-cards h3 {
+.top-cards h3 {
     /* color: #2c7cbd; */
     margin: .5em 0 1em;
     font-size: 1.2em;
 }
 
 
-#top-cards p {
+.top-cards p {
     flex-grow: 1;
     font-size: 0.95em;
     margin: 1em 0;
@@ -101,7 +104,7 @@ header p:hover{
     margin-right: 1em;
 }
 
-#top-cards button {
+.top-cards button {
     padding: .5em 1.5em;
     border: none;
     color: white;
@@ -222,7 +225,7 @@ body{
 .four-boxes{
     display: flex;
     max-width: 70%;
-    justify-self: space-between;
+    /* justify-self: space-between; */
     margin: 0 auto;
     gap: 2%;
     margin-top: 4%;
