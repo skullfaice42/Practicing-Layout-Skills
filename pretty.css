@@ -328,7 +328,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; /* Parallax effect */
-    height: 80vh;
+    min-height: 50vh;
+    outline: none;
+    border: none;
+
 }
 
 
@@ -342,6 +345,8 @@ body{
     padding: 2em;
     font-size: 0.9rem;
     color: black;
+    outline: none;
+    border: none;
 }
 
 .custom-contact-form {
@@ -351,18 +356,33 @@ body{
     justify-self: center;
     /* justify-content: space-between; */
     justify-content: center;
-    gap: 10%;
-    width: 43%; /* Inherit width from .custom-description */
-    margin-right: 7.9%;
+    gap: 9%;
+    width: 48%; /*Inherit width from .custom-description*/
+    /* margin-right: 7.9%; */
+    margin-right: auto;
+    margin-left: auto;
+    outline: none;
+    border: none;
     
 }
 
 .custom-left-section,
 .custom-right-section {
-    width: 37.2%; /* Ensures both sections fit within .custom-description */
+    width: 40.2%; /* Ensures both sections fit within .custom-description */
+    outline: none;
+    border: none;
+    /* padding: .5; */
 }
-.custom-left-section {
+.custom-left-section input {
     margin-left: 0; /* Remove the left margin that might be adding unwanted spacing */
+    /* padding: 1em; */
+    margin-right: 1em;
+    padding: .5em .25em .5em .5em;
+    padding-right: 1em;
+    
+}
+.custom-right-section textarea{
+    padding: .5em 0em 6em .5em;
 }
 input::placeholder, textarea::placeholder {
     color: black;
@@ -373,11 +393,13 @@ input::placeholder, textarea::placeholder {
 .custom-right-section textarea {
     background: rgba(255, 255, 255, 0.404);
     width: 100%; /* Fills available width within each section */
-    padding: 1em;
+    /* padding: 1em; */
     margin-bottom: 1em;
     /* color: black; */
     border: 1px solid #ccc;
     border-radius: 4px;
+    outline: none;
+    border: none;
 }
 
 .custom-right-section {
@@ -393,10 +415,11 @@ input::placeholder, textarea::placeholder {
 
 .custom-form-container h2{
     /* padding: 2em; */
-    padding: 2em;
+    /* padding: 2em; */
     margin-top: 4%;
     margin-bottom: 1%;
     color: white;
+    
 }
 .custom-right-section button {
     align-self: flex-start;
@@ -467,7 +490,19 @@ hr {
         height: 40vh;
  
 }
+.top-cards p{
+    font-size: .5em;
+}
+.two-cards{
+    font-size: .7em;
     
+}
+.four-boxes{
+    font-size: .5em;
+}    
+.one-big-column{
+    font-size: .5em;
+}
 }
 @media screen and (max-width: 770px) {
     .three-cards{
